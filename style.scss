@@ -165,11 +165,11 @@ a, input, button {
         color: $black;
     }
 
-    // &__games-name {
-    //     font-size: 32px;
-    //     font-weight: 700;
-    //     color: $black;
-    //     max-width: 306px;
-    // }
+    &__games-name {
+        font-size: 32px;
+        font-weight: 700;
+        color: $black;
+        max-width: 306px;
+    }
 }
 
