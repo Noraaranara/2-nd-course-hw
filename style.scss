@@ -26,19 +26,17 @@ a, input, button {
 }
 
 .heading {
-    background-color: $lgreen;
+    background: 
+        url(images/big-star.svg) no-repeat 59.7vw -333px,
+        url(images/star-top.svg) no-repeat 11.4vw 69px,
+        url(images/star-left.svg) no-repeat 5.4vw 94px, 
+        url(images/star-center.svg) no-repeat 66.8vw 538px, 
+        url(images/star-right.svg) no-repeat 70.3vw 568px,
+        $lgreen;
     padding-top: 196px;
-    padding-bottom: 246px;
-    height: 800px;
-    background-image: 
-        url(images/big-star.svg),
-        url(images/star-top.svg),
-        url(images/star-left.svg),
-        url(images/star-center.svg),
-        url(images/star-right.svg);
-        background-repeat: no-repeat;
+    padding-bottom: 156px;
 
-    &__title {
+    &__title {    
         font-size: 64px;
         font-weight: 700;
         max-width: 768px;
