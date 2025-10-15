@@ -25,10 +25,11 @@ a, input, button {
 
 .heading {
   background-color: #E1FF8F;
-  height: 800px;
   padding-top: 196px;
   padding-bottom: 246px;
-  position: relative;
+  height: 800px;
+  background-image: url(images/big-star.svg), url(images/star-top.svg), url(images/star-left.svg), url(images/star-center.svg), url(images/star-right.svg);
+  background-repeat: no-repeat;
 }
 .heading__title {
   font-size: 64px;
@@ -56,37 +57,11 @@ a, input, button {
   font-weight: 600;
   cursor: pointer;
 }
-.heading__svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.heading__star-top {
-  position: absolute;
-  top: 69px;
-  left: 156px;
-}
-.heading__star-left {
-  position: absolute;
-  top: 94px;
-  left: 63px;
-}
-.heading__star-center {
-  position: absolute;
-  bottom: 225px;
-  right: 455px;
-}
-.heading__star-right {
-  position: absolute;
-  bottom: 148px;
-  right: 344px;
-}
 
 .about {
   background-color: #202027;
   padding-bottom: 96px;
   position: relative;
-  z-index: -2;
 }
 .about__info {
   padding-top: 94px;
@@ -102,12 +77,6 @@ a, input, button {
   color: #FFFFFF;
   font-weight: 400;
   line-height: 32px;
-}
-.about__svg {
-  position: absolute;
-  right: 0;
-  top: 77px;
-  z-index: -1;
 }
 .about__games {
   display: flex;
