@@ -41,21 +41,22 @@ a, input, button {
   max-width: 720px;
   padding-bottom: 48px;
 }
-.heading__description_bold {
+.heading__description-bold {
   font-weight: bold;
 }
 .heading__button {
   width: 247px;
   height: 66px;
-  box-sizing: border-box;
   border: 1px solid #202027;
   background: #202027;
   color: #FFFFFF;
   border-radius: 60px;
-  padding: 16px 28px 16px 28px;
+  padding: 16px 65px 16px 65px;
   font-size: 24px;
   font-weight: 600;
   cursor: pointer;
+  display: block;
+  font-family: "Montserrat";
 }
 
 .about {

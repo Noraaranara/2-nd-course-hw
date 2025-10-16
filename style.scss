@@ -50,7 +50,7 @@ a, input, button {
         max-width: 720px;
         padding-bottom: 48px;
 
-        &_bold {
+        &-bold {
             font-weight: bold;
         }
     }
@@ -58,15 +58,16 @@ a, input, button {
     &__button {
         width: 247px;
         height: 66px;
-        box-sizing: border-box;
         border: 1px solid $black;
         background: $black;
         color: $white;
         border-radius: 60px;
-        padding: 16px 28px 16px 28px;
+        padding: 16px 65px 16px 65px;
         font-size: 24px;
         font-weight: 600;
         cursor: pointer;
+        display: block;
+        font-family: "Montserrat";
     }
 }
 
