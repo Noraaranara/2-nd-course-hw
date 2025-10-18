@@ -26,13 +26,17 @@ a, input, button {
 }
 
 .heading {
-    background-color: $lgreen;
-    height: 800px;
+    background: 
+        url(images/big-star.svg) no-repeat 59.7vw -333px,
+        url(images/star-top.svg) no-repeat 11.4vw 69px,
+        url(images/star-left.svg) no-repeat 5.4vw 94px, 
+        url(images/star-center.svg) no-repeat 66.8vw 538px, 
+        url(images/star-right.svg) no-repeat 70.3vw 568px,
+        $lgreen;
     padding-top: 196px;
-    padding-bottom: 246px;
-    position: relative;
+    padding-bottom: 156px;
 
-    &__title {
+    &__title {    
         font-size: 64px;
         font-weight: 700;
         max-width: 768px;
@@ -41,62 +45,39 @@ a, input, button {
 
     &__description {
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 32px;
         max-width: 720px;
         padding-bottom: 48px;
+
+        &-bold {
+            font-weight: bold;
+        }
     }
 
     &__button {
         width: 247px;
         height: 66px;
-        box-sizing: border-box;
         border: 1px solid $black;
         background: $black;
         color: $white;
         border-radius: 60px;
-        padding: 16px 28px 16px 28px;
+        padding: 16px 65px 16px 65px;
         font-size: 24px;
         font-weight: 600;
         cursor: pointer;
-    }
-
-    &__svg {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    &__star {
-
-        &-top {
-            position: absolute;
-            top: 69px;
-            left: 156px;
-        }
-        &-left {
-            position: absolute;
-            top: 94px;
-            left: 63px;
-        }
-        &-center {
-            position: absolute;
-            bottom: 225px;
-            right: 455px;
-        }
-        &-right {
-            position: absolute;
-            bottom: 148px;
-            right: 344px;
-        }
+        display: block;
+        font-family: "Montserrat";
     }
 }
 
 .about {
-    background-color: $black;
+    background: 
+        url(images/star-about.svg) no-repeat 65vw 75px,
+        url(images/about-top.svg) no-repeat 2vw 106.6vh,
+        url(images/about-bottom.svg) no-repeat 4vw 113vh,
+        $black;
     padding-bottom: 96px;
-    position: relative;
-    z-index: -2;
 
     &__info {
         padding-top: 94px;
@@ -114,14 +95,6 @@ a, input, button {
         color: $white;
         font-weight: 400;
         line-height: 32px;
-    }
-
-    &__svg {
-        position: absolute;
-        right: 0;
-        top: 77px;
-        z-index: -1;
-        
     }
 
     &__games {
