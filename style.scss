@@ -56,18 +56,8 @@ a, input, button {
     }
 
     &__button {
-        width: 247px;
-        height: 66px;
-        border: 1px solid $black;
-        background: $black;
-        color: $white;
-        border-radius: 60px;
+        @extend %buttton;
         padding: 16px 65px 16px 65px;
-        font-size: 24px;
-        font-weight: 600;
-        cursor: pointer;
-        display: block;
-        font-family: "Montserrat";
     }
 }
 
@@ -145,4 +135,44 @@ a, input, button {
         max-width: 306px;
     }
 }
+
+.games {
+    background: $black;
+
+    &__title {
+        padding-bottom: 72px;
+        font-weight: 700;
+        font-size: 64px;
+        color: $white;
+    }
+}
+
+.game {
+
+    &__article {
+        border-radius: 30px;
+        background-color: $white;
+    }
+
+    &__name {
+        font-weight: 700;
+        color: $black;
+    }
+
+    &__description {
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+    &__button {
+        @extend %button;
+        padding: 16px 76px 16px 76px;
+    }
+
+    &__img {
+        border-radius: 30px;
+    }
+}
+
+@import 'mobil';
 

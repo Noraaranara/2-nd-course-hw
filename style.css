@@ -118,4 +118,23 @@ a, input, button {
   font-weight: 700;
   color: #202027;
   max-width: 306px;
+}
+
+.games {
+  background: #202027;
+}
+.games__title {
+  padding-bottom: 72px;
+  font-weight: 700;
+  font-size: 64px;
+  color: #FFFFFF;
+}
+
+.game__name {
+  font-weight: 700;
+  color: #202027;
+}
+.game__description {
+  font-weight: 400;
+  line-height: 32px;
 }/*# sourceMappingURL=style.css.map */
