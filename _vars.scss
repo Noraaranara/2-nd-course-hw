@@ -1,9 +1,9 @@
 $black: #202027;
 $white: #FFFFFF;
 $dgreen: #BDED35;
-$lgreen: #E1FF8F;
+$lgreen: #E1FF8F;       
 
-%button { width: 247px;
+@mixin button { width: 247px;
         height: 66px;
         border: 1px solid $black;
         background: $black;
