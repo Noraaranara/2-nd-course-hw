@@ -1,0 +1,51 @@
+@media (min-width: 768px) and (max-width: 1240px) {
+    .center {
+        padding-left: calc(50% - 788px / 2);
+        padding-right: calc(50% - 788px / 2);
+    }
+
+    .about {
+        &__games {
+            row-gap: 32px;
+            align-items: stretch;
+
+            & > :nth-child(n+4):nth-child(-n+6) {
+            align-self: auto;
+            }
+        }
+    }
+
+    .game {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+
+        &__article {
+            grid-column: span 8;
+        }
+
+        &__img {
+            max-width: 50%;
+        }
+
+        &__items {
+            align-items: flex-start;
+        }
+
+        &__name {
+            font-size: 32px;
+            max-width: 451px;
+        }
+
+        &__description {
+            font-size: 16px;
+            line-height: 100%;
+            max-width: 343px;
+        }
+
+        &__button {
+            font-size: 16px;
+            padding: 16px 110px;
+            margin-right: 0;
+        }
+    }
+}
