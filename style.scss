@@ -27,14 +27,17 @@ a, input, button {
 
 .heading {
     background: 
-        url(images/big-star.svg) no-repeat 59.7vw -333px,
+        url(images/big-star.svg) no-repeat 60.5vw -333px,
         url(images/star-top.svg) no-repeat 11.4vw 69px,
         url(images/star-left.svg) no-repeat 5.4vw 94px, 
         url(images/star-center.svg) no-repeat 66.8vw 538px, 
         url(images/star-right.svg) no-repeat 70.3vw 568px,
         $lgreen;
-    padding-top: 196px;
-    padding-bottom: 156px;
+        padding-top: 196px;
+        padding-bottom: 156px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
     &__title {    
         font-size: 64px;
@@ -47,8 +50,7 @@ a, input, button {
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
-        max-width: 720px;
-        padding-bottom: 48px;
+        max-width: 746px;
 
         &-bold {
             font-weight: bold;
@@ -56,18 +58,27 @@ a, input, button {
     }
 
     &__button {
-        width: 247px;
-        height: 66px;
         border: 1px solid $black;
         background: $black;
         color: $white;
         border-radius: 60px;
-        padding: 16px 65px 16px 65px;
         font-size: 24px;
         font-weight: 600;
         cursor: pointer;
-        display: block;
         font-family: "Montserrat";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 953px;
+        padding: 16px 65px 16px 65px;
+        transition: all 0.5s;
+        margin-top: 48px;
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+
+        }
     }
 }
 
@@ -113,6 +124,11 @@ a, input, button {
         border-radius: 30px;
         background-color: $white;
         max-width: 378px;
+        transition: all 0.5S;
+
+        &:hover {
+            transform: scale(1.07);
+        }
     }
 
 
@@ -145,4 +161,103 @@ a, input, button {
         max-width: 306px;
     }
 }
+
+.games {
+    background: 
+        url(images/star-bott-g.svg) no-repeat 87vw 5vh,
+        url(images/star-top-g.svg) no-repeat 90vw 12vh,
+        url(images/star-bot.svg) no-repeat 90.5vw 448vh,
+        url(images/star-bott.svg) no-repeat 85vw 454vh,
+        $black;
+    padding-bottom: 144px;
+
+    &__title {
+        padding-bottom: 72px;
+        font-weight: 700;
+        font-size: 64px;
+        color: $white;
+    }
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__article {    
+        border-radius: 30px;
+        background-color: $white;
+        display: flex;
+        flex-direction: row-reverse;
+
+        &:nth-child(2n) {   
+            flex-direction: row;
+        }
+    }
+
+    &__items {
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 50%;
+    }
+
+    &__name {
+        font-weight: 700;
+        color: $black;
+        padding-right: 215px;
+    }
+
+    &__description {
+        font-weight: 400;
+        line-height: 32px;
+        max-width: 423px;
+        padding-bottom: 12px;
+    }
+
+    &__button {
+        border: 1px solid $black;
+        background: $black;
+        color: $white;
+        border-radius: 60px;
+        font-size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+        font-family: "Montserrat";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 76px 16px 76px;
+        margin-right: 256px;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+    }
+
+    &__img {
+        border-radius: 30px;
+        max-width: auto;
+    }
+}
+
+.footer {
+    background-color: $dgreen;
+
+    &__title {
+        font-weight: 600;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@import 'tablet';
+@import 'mobil';
 
