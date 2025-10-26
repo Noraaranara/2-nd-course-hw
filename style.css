@@ -68,6 +68,10 @@ a, input, button {
   color: #202027;
 }
 
+.animation {
+  background-color: #202027;
+}
+
 .about {
   background: url(images/star-about.svg) no-repeat 65vw 75px, url(images/about-top.svg) no-repeat 2vw 106.6vh, url(images/about-bottom.svg) no-repeat 4vw 113vh, #202027;
   padding-bottom: 96px;
