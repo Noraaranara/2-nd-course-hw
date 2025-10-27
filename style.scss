@@ -42,7 +42,7 @@ a, input, button {
     &__title {    
         font-size: 64px;
         font-weight: 700;
-        max-width: 768px;
+        max-width: 776px;
         padding-bottom: 24px;
     }
 
@@ -84,6 +84,7 @@ a, input, button {
 
 .animation {
     background-color: $black;
+    overflow-x: hidden;
 }
 
 .about {
