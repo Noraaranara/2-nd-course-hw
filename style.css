@@ -34,7 +34,7 @@ a, input, button {
 .heading__title {
   font-size: 64px;
   font-weight: 700;
-  max-width: 768px;
+  max-width: 776px;
   padding-bottom: 24px;
 }
 .heading__description {
@@ -70,6 +70,7 @@ a, input, button {
 
 .animation {
   background-color: #202027;
+  overflow-x: hidden;
 }
 
 .about {
