@@ -77,7 +77,7 @@
 //     if (isNaN(num1) || isNaN(num2)) {
 //         return(`Одно или оба значения не являются числом`)
 //     } else {
-//         return a * b;
+//         return num1 * num2;
 //     }
     
 // }
@@ -95,38 +95,38 @@
 //         }
 
 //         else {
-//             return(`${userNum} в кубе равняется ${userNum ** 2}`);
+//             return(`${userNum} в кубе равняется ${userNum ** 3}`);
 //         }
 //     }
 // }
 
 // alert(num());
 
-// 7)
-function getCircleArea() {
-    return(`Площадь круга ${this.name} составляет : ${Math.PI * this.radius * this.radius}`);
-}
+// // 7)
+// function getCircleArea() {
+//     return(`Площадь круга ${this.name} составляет : ${Math.PI * this.radius * this.radius}`);
+// }
 
-function getCirclePerimeter() {
-    return (`Периметр круга ${this.name} составляет ${2 * Math.PI * this.radius}`)
-}
+// function getCirclePerimeter() {
+//     return (`Периметр круга ${this.name} составляет ${2 * Math.PI * this.radius}`)
+// }
 
-    const circle1 = {
-        name: 'circle1',
-        radius: 4,
-        getArea: getCircleArea,
-        getPerimeter: getCirclePerimeter
-    }
+//     const circle1 = {
+//         name: 'circle1',
+//         radius: 4,
+//         getArea: getCircleArea,
+//         getPerimeter: getCirclePerimeter
+//     }
 
-    const circle2 = {
-        name: 'circle2',
-        radius: 9,
-        getArea: getCircleArea,
-        getPerimeter: getCirclePerimeter
-    }
+//     const circle2 = {
+//         name: 'circle2',
+//         radius: 9,
+//         getArea: getCircleArea,
+//         getPerimeter: getCirclePerimeter
+//     }
 
-console.log(circle1.getArea());
-console.log(circle1.getPerimeter());
+// console.log(circle1.getArea());
+// console.log(circle1.getPerimeter());
 
-console.log(circle2.getArea());
-console.log(circle2.getPerimeter());
+// console.log(circle2.getArea());
+// console.log(circle2.getPerimeter());
