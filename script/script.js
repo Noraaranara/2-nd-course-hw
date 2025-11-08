@@ -29,3 +29,49 @@ const gameFirst = () => {
         gameFirst();
     }
 }
+
+const gameSecond = () => {
+    const operators = ['+', '-', '*', '/'];
+    let operator = operators[Math.floor(Math.random() * operators.length)];
+    let a, b, result;
+    let userAnswer;
+    
+    a = Math.floor(Math.random() * 10 + 1);
+    b = Math.floor(Math.random() * 10 + 1);
+
+    for(; a < b;) {
+        a = Math.floor(Math.random() * 10 + 1);
+        b = Math.floor(Math.random() * 10 + 1);
+    }
+
+    const applyOperator = (operator, a, b) => {
+        switch (operator) {
+            case '+':
+                return a + b;
+
+            case '-':
+                return a - b;
+
+            case '*':
+                return a * b;
+
+            case '/':
+                return a / b;
+        }
+    }
+
+    
+    result = Math.floor(applyOperator(operator, a, b));
+    userAnswer = Number(prompt(`Сколько будет  ${a} ${operator} ${b} ?`));
+
+    if (userAnswer === result) {
+        alert(`Правильно!`);
+    } else {
+        alert(`неправильно! Правильный ответ: ${result}`);
+    }
+
+    if (confirm('Сыграть ещё раз?')) {
+        gameSecond();
+    }
+
+}
