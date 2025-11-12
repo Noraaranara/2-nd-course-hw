@@ -116,3 +116,29 @@ console.log(`Исходный массив:`, rndArr6);
 
 const sum = rndArr6.reduce((total, rndArr6) => total + rndArr6, 0);
 console.log(`Среднее арифметическое значение массива: ${sum / rndArr6.length}`);
+
+
+
+// const filterGreaterThan = (arr, limit) => {
+//     if (arr) {
+//         return arr.filter(number => number > limit);
+//     }
+
+
+// }
+// console.log(filterGreaterThan([5, 10, 35], 9));
+
+// const arr1 = [5, 2, 7];
+// const arr2 = [2, 3, 7, 9];
+
+// const mergeAndSort = (arr1, arr2) => {
+//     return [...new Set([...arr1, ...arr2].sort())];
+// }
+// console.log(mergeAndSort(arr1, arr2));
+
+// const arr1 = ['apple', 'orange', 'apple', 'avocado', 'banana'];
+
+// const uniqueElements = (arr1) => {
+//     return arr1.filter((item, index) => arr1.indexOf(item) === index)
+// }
+// console.log(uniqueElements(arr1));

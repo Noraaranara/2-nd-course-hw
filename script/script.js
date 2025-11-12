@@ -75,3 +75,67 @@ const gameSecond = () => {
     }
 
 }
+
+const gameThird = () => {
+    let text;
+    console.log(text);
+    for(;;) {
+        text = prompt(`Введите текст`);
+        if (text === null) {
+            break;
+        }
+        
+        let reversedText = text.split('').reverse().join('');
+
+        alert(`Перевёрнутый текст: ${reversedText}`);
+
+        if (!confirm('Сыграть ещё раз?')) {
+            break;
+        }
+    }
+}
+
+const gameForth = () => {
+    const quiz = [
+        {
+            question: "Какой цвет небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2 // номер правильного ответа
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+    do {
+        let rightAnswers = 0;
+        for (let q of quiz) {
+            let message = `${q.question}\n${q.options.join('\n')}`;
+            let answer = prompt(message);
+            if (answer === null) {
+                alert(`Викторина прервана!`)
+                return;
+            }
+            let correctNum = Number(answer) === q.correctAnswer;
+            let correctText = answer.trim().toLowerCase() === q.options[q.correctAnswer - 1]
+                .replace(/^\d+\.\s*/,'')
+                .toLowerCase();
+
+            if (correctNum || correctText) {
+                alert(`Правильно!`);
+                rightAnswers++;
+            } else {
+                alert(`Неправильно!`);
+            }
+        }
+
+        alert(`Викторина завершена, правильных ответов: ${rightAnswers} из ${quiz.length}`);
+    } while (confirm('Сыграть ещё раз?'));
+}
