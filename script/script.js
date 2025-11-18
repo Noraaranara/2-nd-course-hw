@@ -36,12 +36,12 @@ const gameSecond = () => {
     let a, b, result;
     let userAnswer;
     
-    a = Math.floor(Math.random() * 10 + 1);
-    b = Math.floor(Math.random() * 10 + 1);
+    a = Math.floor(Math.random() * 10) + 1;
+    b = Math.floor(Math.random() * 10) + 1;
 
     for(; a < b;) {
-        a = Math.floor(Math.random() * 10 + 1);
-        b = Math.floor(Math.random() * 10 + 1);
+        a = Math.floor(Math.random() * 10) + 1;
+        b = Math.floor(Math.random() * 10) + 1;
     }
 
     const applyOperator = (operator, a, b) => {
@@ -59,6 +59,8 @@ const gameSecond = () => {
                 return a / b;
         }
     }
+
+    
 
     
     result = Math.floor(applyOperator(operator, a, b));
