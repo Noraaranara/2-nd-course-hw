@@ -32,14 +32,14 @@ console.log(`Максимальное значение:`, max);
 console.log('\n%c Задание №5:', 'color:green');
 const random = () => {
     const rndNumber = Math.floor(Math.random() * 10);
-    console.log(`Рандомное чило:`, rndNumber);
+    console.log(`Рандомное число:`, rndNumber);
 }
 random();
 
 console.log('\n%c Задание №6:', 'color:green');
 const generateRandomArray = (num) => {
     if (typeof num !== 'number' || num <= 0 || !Number.isInteger(num)) {
-        return (`Число должено быть положительным целым числом`)
+        return (`Число должно быть положительным целым числом`)
     }
 
     const length = Math.floor(num / 2);
@@ -58,7 +58,7 @@ generateRandomArray(8));
 console.log('\n%c Задание №7:', 'color:green');
 const generateRandomNum = (min, max) => {
     if (!Number.isInteger(min) || !Number.isInteger(max)) {
-        return (`Оба числа должены быть положительными целыми числами`)
+        return (`Оба числа должны быть положительными целыми числами`)
     }
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }

@@ -21,7 +21,7 @@ const gameFirst = () => {
             alert("Умница, число угадано верно");
             break;
         } else {
-            alert(`Введёное число ${userNumber > rndNumber ? 'больше' : 'меньше'} загаданного!`);
+            alert(`Введённое число ${userNumber > rndNumber ? 'больше' : 'меньше'} загаданного!`);
         }
     }
 
@@ -141,3 +141,56 @@ const gameForth = () => {
         alert(`Викторина завершена, правильных ответов: ${rightAnswers} из ${quiz.length}`);
     } while (confirm('Сыграть ещё раз?'));
 }
+
+const gameFifth = () => {
+    const options = ['камень', 'ножницы', 'бумага'];
+
+    for(;;) {
+        let compAnswer = Math.floor(Math.random() * options.length);
+        let userChoice = prompt("Выберите: камень, ножницы или бумага.");
+
+        if (userChoice === null) {
+            alert("Игра прервана");
+            break;
+        }
+
+        let isUserChoiceNumberCorrect = Number(userChoice) >= 1 && Number(userChoice) <= options.length;
+        let normalChoice = options.map(c => c 
+            .replace(/^\d+\.\s*/,'')
+            .trim()
+            .toLowerCase()
+        );
+
+        let normalUserChoice = userChoice
+            .trim()
+            .replace(/^\d+\.\s*/,'')
+            .toLowerCase();
+        
+        let isUserChoiceStringCorrect = normalChoice.includes(normalUserChoice);
+        if (!isUserChoiceNumberCorrect && !isUserChoiceStringCorrect) {
+            alert(`Введено неверное значение. Попробуйте ещё раз`);
+            continue;
+            prompt
+        }
+
+        let userChoiceValidNumberIndex = Number(userChoice);
+        let userChoiceValidStringIndex = normalChoice.indexOf(normalUserChoice);
+        let userChoiceFinalIndex = userChoiceValidNumberIndex >= 0 ? userChoiceValidNumberIndex : userChoiceValidStringIndex;
+
+        if (userChoiceFinalIndex === compAnswer) {
+            alert(`Ничья!`);
+        } else if (
+            (userChoiceFinalIndex === 0 && compAnswer === 1) || 
+            (userChoiceFinalIndex === 1 && compAnswer === 2) ||
+            (userChoiceFinalIndex === 2 && compAnswer === 0)
+        ) {
+            alert(`Вы победили🤗!  Компьютер выбрал: ${options[compAnswer]}`);
+        } else {
+            alert(`Вы проиграли😭!  Компьютер выбрал: ${options[compAnswer]}`);
+        }
+
+        if (!confirm('Сыграть ещё раз?')) break;
+    }
+}
+
+
