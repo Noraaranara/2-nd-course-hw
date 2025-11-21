@@ -1,9 +1,10 @@
 console.log('\n%c Задание №1:', 'color:green');
 const btnEl = document.querySelector('.btn-remove');
+const textToRemove = document.querySelector('.hdr');
 
 btnEl.addEventListener('click', function (e) {
-    const textToRemove = document.querySelector('.hdr');
-    textToRemove.remove();
+    textToRemove.classList.toggle('hdr2')
+
 });
 
 
