@@ -172,8 +172,8 @@ a, input, button {
         url(images/star-bott-g.svg) no-repeat 87vw 5vh,
         url(images/star-top-g.svg) no-repeat 90vw 12vh,
         url(images/star-bot.svg) no-repeat 90.5vw 448vh,
-        url(images/star-bott.svg) no-repeat 85vw 454vh,
-        $black;
+        url(images/star-bott.svg) no-repeat 85vw 454vh,;
+    background-color: $black;
     padding-bottom: 144px;
 
     &__title {
