@@ -80,7 +80,6 @@ const gameSecond = () => {
 
 const gameThird = () => {
     let text;
-    console.log(text);
     for(;;) {
         text = prompt(`Введите текст`);
         if (text === null) {
@@ -170,7 +169,6 @@ const gameFifth = () => {
         if (!isUserChoiceNumberCorrect && !isUserChoiceStringCorrect) {
             alert(`Введено неверное значение. Попробуйте ещё раз`);
             continue;
-            prompt
         }
 
         let userChoiceValidNumberIndex = Number(userChoice);
