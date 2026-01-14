@@ -101,7 +101,7 @@ const gameForth = () => {
         {
             question: "Какой цвет небо?",
             options: ["1. Красный", "2. Синий", "3. Зеленый"],
-            correctAnswer: 2 // номер правильного ответа
+            correctAnswer: 2 
         },
         {
             question: "Сколько дней в неделе?",
